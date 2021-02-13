@@ -1,5 +1,5 @@
 # Use Microsoft's official .NET image.
-FROM microsoft/dotnet:3.1-sdk
+FROM mcr.microsoft.com/dotnet/sdk:3.1
 
 # Copy csproj and restore as distinct layers.
 WORKDIR /app
