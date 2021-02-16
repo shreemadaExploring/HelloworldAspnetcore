@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: aspnetcore
-        image: shreemada/helloworldaspnetcore:v1
+        image: gcr.io/aspnetcore-305011/aspnetcore:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
