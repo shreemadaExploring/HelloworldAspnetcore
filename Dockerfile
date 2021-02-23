@@ -1,5 +1,5 @@
 # Use Microsoft's official .NET image.
-FROM mcr.microsoft.com/dotnet/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:3.1-alpine
 
 # Copy csproj and restore as distinct layers.
 WORKDIR /app
@@ -16,4 +16,4 @@ RUN dotnet publish -c Release -o out
 ENV ASPNETCORE_URLS http://*:8080
 
 # Run the web service on container startup.
-CMD ["dotnet", "out/HelloWorldAspNetCore.dll"]
+CMD ["dotnet", "out/HelloWorldAspnetcore.dll"]
