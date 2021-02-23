@@ -3,7 +3,10 @@ kind: Deployment
 metadata:
   name: aspnetcore-v1
 spec:
-  replicas: 1
+  replicas: 3
+  selector:
+    matchLabels:
+     app: aspnetcore
   template:
     metadata:
       labels:
